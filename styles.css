@@ -380,6 +380,10 @@ h2{
     width: 300px;
 }
 
+    footer{
+        flex-direction: column;
+    }
+
 }
 
 

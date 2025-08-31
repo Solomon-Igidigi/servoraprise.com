@@ -383,7 +383,9 @@ h2{
     footer{
         flex-direction: column;
     }
-
+    .mini-footer{
+        text-align: center;
+    }
 }
 
 
@@ -401,6 +403,10 @@ h2{
     width: 80%;
     margin: 0 40px;
 }
+
+    .mini-footer{
+        text-align: center;
+    }
 
 }
 

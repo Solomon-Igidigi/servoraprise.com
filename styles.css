@@ -1,0 +1,654 @@
+/* ===== GENERAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #222;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077FF; /* brand blue */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar .logo {
+    color: #FFCC33; /* brand yellow */
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar .logo:hover {
+    transform: scale(1.05);
+    color: #FF8800; /* orange on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+}
+.nav-links a:hover {
+    background-color: #FF3399; /* brand pink */
+    color: #FFCC33; /* yellow text */
+}
+
+/* ===== DROPDOWN IMPROVEMENTS ===== */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #9900FF; /* brand purple, you can choose #FF3399 for pink */
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.17);
+    padding: 0.2rem 0;
+    z-index: 2000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 6px 14px;
+    color: #FFCC33; /* brand yellow */
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-content li:last-child a {
+    border-bottom: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #00C977; /* brand green */
+    color: #fff; /* white for readability */
+    font-weight: 700;
+}
+.dropdown-content li a:hover {
+    background-color: #FF3399; /* brand pink */
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .dropdown-content {
+        background: #FF3399; /* pink background for mobile dropdown */
+    }
+}
+
+
+/* ===== HERO SECTION ===== */.hero {
+    background: url('hero-placeholder.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}.hero-overlay {
+    background: linear-gradient(to bottom, rgba(255, 204, 51, 0.7), rgba(0, 201, 119, 0.7)); /* Mixed brand colors: yellow to green overlay with transparency */
+    padding: 2rem 1rem; /* Reduced padding for smaller screens */
+    border-radius: 10px;
+    max-width: 90%; /* Changed from 700px to percentage */
+    width: 700px; /* Maintain desktop width */
+}
+
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    background: #FF8800;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover, .btn:focus {
+    background: #FFCC33;
+    box-shadow: 0 4px 10px rgba(255, 136, 0, 0.6);
+    outline: none;
+}
+
+/* ===== SLIDER ===== */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+}
+
+
+.slide {
+    display: none;
+    position: relative;
+    transition: opacity 0.5s ease;
+    
+}
+
+.slide.active {
+    display: block;
+    
+}
+
+.slide img {
+    width: 80%;
+    height: 700px;
+    border-radius: 8px;
+    display: block; /* Prevent image overflow */
+    justify-self: center;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 130px;
+    
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: #FF8800;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===== SERVICES ===== */
+.services {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    color: #222;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+}
+
+.service-card {
+    padding: 1.5rem 1rem;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.service-card i {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.orange { background: #FF8800; }
+.green { background: #00C977; }
+.blue { background: #0077FF; }
+.yellow { 
+    background: #FFCC33; 
+    color: #000; 
+}
+.purple { background: #9900FF; }
+.pink { background: #FF3399; }
+
+.service-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+/* ===== FEATURE SECTIONS (Recharge Republic & Content Downloader) ===== */
+.feature-section {
+    padding: 3rem 1rem; /* Reduced padding for smaller screens */
+    max-width: 100%; /* Changed from 1100px to 100% */
+    width: 1300px; /* Maintain desktop width */
+    margin: 0 auto 4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+}
+
+.feature-section.alt-layout {
+    flex-direction: row-reverse;
+}
+
+.feature-content {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.feature-image img {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.feature-text h2 {
+    font-size: 2rem;
+    margin: 20px;
+    color: #222;
+}
+
+.feature-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #444;
+    margin: 20px;
+}
+
+.feature-text .disclaimer {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 20px;
+    font-style: italic;
+}
+
+.mini-footer {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 1rem;
+}
+
+/* ===== Aluminium Service Page ===== */
+.gallery-grid{
+    padding: 20px 20px;
+    background: #fff;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+}
+
+.service-detail{
+    padding: 0 20px 20px 20px;
+    background: #fff;
+    max-width: 80%; /* Changed from 600px to 100% */
+    margin: 0 auto 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+}
+
+h2{
+    justify-self: center;
+    margin: 20px 0;
+}
+
+.gallery-card{
+    width: 300px;
+    height: 300px;
+}
+
+
+.gallery-grid img{
+    height: 400px;
+    width: 40%;
+    margin: 0 40px;
+}
+
+@media (max-width: 1168px) {
+    
+    .gallery-grid img{
+    height: 400px;
+    width: 80%;
+    margin: 0 40px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+    .feature-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-content img{
+        height: 200px;
+        width: 300px;
+    }
+    .gallery-grid img{
+    height: 300px;
+    width: 80%;
+    margin: 0 40px;
+}
+
+}
+
+
+/* ===== CONTACT ===== */
+.contact {
+    padding: 3rem 1rem; /* Reduced padding for smaller screens */
+    text-align: center;
+    background: #fff;
+    max-width: 100%; /* Changed from 600px to 100% */
+    width: 600px; /* Maintain desktop width */
+    margin: 0 auto 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.contact form {
+    max-width: 100%; /* Ensure form scales */
+    width: 500px; /* Maintain desktop width */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%; /* Ensure inputs scale */
+}
+
+.contact textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact button {
+    background: #FF8800;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #FFCC33;
+    color: #000;
+}
+
+.social-links {
+    margin-top: 1.2rem;
+}
+
+.social-links a {
+    margin: 0 8px;
+    font-size: 1.8rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FF8800;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.3s ease;
+}
+
+.fade-slide.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar .logo {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        min-width: 100%; /* Adjusted to 100% for mobile */
+        border-radius: 0; /* Remove radius for full-width fit */
+        box-shadow: none; /* Remove shadow for simplicity on mobile */
+        padding: 0; /* Reduced from 0 to eliminate extra space */
+        background: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .hero {
+        height: 60vh; /* Reduce height for mobile */
+    }
+
+    .hero-overlay {
+        max-width: 95%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .slider {
+        margin-bottom: 1rem;
+    }
+
+    .slide img {
+        max-height: 300px; /* Limit image height on mobile */
+        object-fit: cover; /* Ensure images fit without distortion */
+    }
+
+    .caption {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .prev, .next {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .services {
+        padding: 2rem 1rem;
+    }
+
+    .services h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-section {
+        flex-direction: column !important;
+        padding: 2rem 1rem;
+        max-width: 95%;
+    }
+
+    .feature-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+
+    .contact {
+        max-width: 95%;
+        padding: 2rem 1rem;
+    }
+
+    .contact form {
+        max-width: 95%;
+    }
+
+    .contact input, .contact textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact button {
+        padding: 0.6rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+
+    .feature-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .feature-text p {
+        font-size: 0.9rem;
+    }
+
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+} 

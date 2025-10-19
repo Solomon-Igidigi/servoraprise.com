@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServoraPrise Ecosystem</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION BAR ===== -->
+<header>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="images/Servora_Enterprise_LTD-ServoraPriseByChicent_Logo_Navigationbar.jpg"
+             alt="ServoraPrise logo" class="logo-img">
+        <span class="brand-name">ServoraPrise Ecosystem</span>
+      </div>
+
+      <!-- Menu toggle (hamburger). If you prefer 3-dots, see CSS note below. -->
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+
+        <!-- Services dropdown (works on hover desktop and click/tap on mobile) -->
+        <li class="has-dropdown">
+          <!-- Use a button so it is keyboard-accessible -->
+          <button class="services-toggle" aria-haspopup="true" aria-expanded="false">
+            Services <span class="caret">▾</span>
+          </button>
+
+          <ul class="dropdown-content">
+            <li><a href="aluminium-service.html">Custom Aluminium Fabrication</a></li>
+            <li><a href="pos-service.html">POS & Utility Services</a></li>
+            <li><a href="vendor-exchange.html">Vendor Exchange Services</a></li>
+            <li><a href="smart-automation.html">Tech & Smart Automation</a></li>
+            <li><a href="general-merchandise.html">Diverse General Commerce</a></li>
+          </ul>
+        </li>
+
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+    <div class="hero-overlay">
+        <h1>Built with Precision. Driven by Purpose</h1>
+        <p>Your One-Stop Business Partner — Custom Aluminium, POS Services, Vendor Exchange, Tech, Diverse General Commerce and More...</p><br>
+        <a href="#services" style="display:inline-block; padding:14px 32px; background:#FF8800; color:#fff; font-weight:bold; text-transform:uppercase; border-radius:50px; text-decoration:none; transition:0.3s;"
+           onmouseover="this.style.background='#FF8800'" 
+           onmouseout="this.style.background='#FF8800'">
+           View Services
+        </a>
+    </div>
+</section>
+
+<!-- ===== SLIDER SECTION ===== -->
+    <section class="slider" id="gallery">
+<!-- Aluminium Banner -->
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/advert-banner_Aluminium.png" alt="Custom Aluminium Fabrication - Window (Casement... more in gallery)">
+                <div class="caption">Custom Aluminium Fabrication – Built to Last</div>
+            </div>
+<!-- POS Banner -->
+            <div class="slide">
+                <img src="images/advert-banner_POS.png" alt="POS Services">
+                <div class="caption">POS Services – Seamless Payment Solutions</div>
+            </div>
+<!-- Vendor Exchange Banner -->
+            <div class="slide">
+                <img src="images/advert-banner_Exchange.png" alt="Vendor Exchange Services">
+                <div class="caption">Vendor Exchange Services – Convert digital currencies to Naira</div>
+            </div>
+<!-- Software Developer Banner -->
+            <div class="slide">
+                <img src="images/advert-banner_Software.png" alt="Tech-Enabled Systems & Smart Automation">
+                <div class="caption">Tech-Enabled Systems & Smart Automation – Software developer</div>
+            </div>
+<!-- Diverse Needs Banner -->
+            <div class="slide">
+                <img src="images/advert-banner_General_Needs.png" alt="Diverse General Trading">
+                <div class="caption">Diverse Needs – talk about versatility!</div>
+            </div>
+<!-- Recharge Republic Logo's-->
+            <div class="slide">
+                <img src="images/RR-4-logos.jpg" alt="Initiative Arm - Recharge Republic">
+                <div class="caption">Initiative Arm – Civic Engagement</div>
+            </div>
+<!-- Control Button -->
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+
+        <div class="service-card orange">
+            <i class="fas fa-industry"></i>
+            <h3>Custom Aluminium Fabrication</h3>
+            <p>Modern, durable, stylish finishing for homes, offices, and commercial projects.</p>
+            <a href="aluminium-service.html" class="btn">Explore Service</a>
+        </div>
+
+        <div class="service-card green">
+            <i class="fas fa-credit-card"></i>
+            <h3>POS & Utility Services</h3>
+            <p>Withdrawals, deposits, transfers, and utility bill payments.</p>
+            <a href="pos-service.html" class="btn">Explore Service</a>
+        </div>
+
+        <div class="service-card blue">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Vendor Exchange<br><small>(Digital Fund Exchange)</small></h3>
+            <p>Convert cryptocurrencies (Bitcoin and more), PayPal, gift cards, and airtime to cash — quickly and securely.</p>
+            <a href="vendor-exchange.html" class="btn">Explore Service</a>
+        </div>
+
+        <div class="service-card purple">
+            <i class="fas fa-cogs"></i>
+            <h3>Tech & Smart Automation</h3>
+            <p>Digital software tools that simplify work and increase productivity.</p>
+            <a href="smart-automation.html" class="btn">Explore Service</a>
+        </div>
+
+        <div class="service-card pink">
+            <i class="fas fa-globe"></i>
+            <h3>Diverse General Commerce</h3>
+            <p>Supply of essential products and services for everyday life.</p>
+            <a href="general-merchandise.html" class="btn">Explore Service</a>
+        </div>
+
+    </div>
+</section>
+    </section>
+
+<!-- ===== RECHARGE REPUBLIC SECTION ===== -->
+    <section id="recharge-republic" class="feature-section">
+        <div class="feature-content">
+            <div class="feature-image">
+            	<!-- Replace with real images -->
+                <img src="images/RR-4-logos.jpg" alt="Recharge Republic"style= "height: 300px; width: 600px;">
+            </div>
+            <div class="feature-text">
+                <h2>Recharge Republic</h2>
+                <p>
+                    Recharge Republic is ServoraPrise’s civic and media engagement arm — dedicated to driving community awareness,
+                    cultural storytelling, and impactful social campaigns. We connect people through compelling content, grassroots initiatives,
+                    and digital engagement platforms that inspire change.
+                </p>
+                <a href="recharge-republic.html" class="btn" style="margin-top:1rem; display:inline-block; background:#0077FF; color:#fff; padding:0.7rem 1.5rem; border-radius:5px; text-decoration:none;">Learn more</a>
+                <!-- ===== POSITION CENTER ==== -->
+    	<div style="text-align:center; margin-top:25px;">
+                <div class="mini-footer">
+                    © 2025 Recharge Republic. All rights reserved. Powered by Servora Enterprise Limited<br> × <br>ServoraPrise by Chicent | Diamore Innovation.
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- ===== CONTENT DOWNLOADER TOOL SECTION ===== -->
+
+<!-- ===== QUOTE REQUEST FORM ===== -->
+   
+<!-- ===== CONTACT SOCIAL MEDIA HANDLES ===== -->
+
+<!-- ===== CONTACT BUTTON ===== -->
+           <div style="text-align:center; margin-top:25px;">
+<a href="contact-us.html" style="display:inline-block; padding:14px 32px; background:#FF8800; color:#fff; font-weight:bold; text-transform:uppercase; border-radius:50px; text-decoration:none; transition:0.3s;"
+               onmouseover="this.style.background='#FF8800'" 
+               onmouseout="this.style.background='#FF8800'">
+               Contact Us 
+            </a>
+    </div>
+<br>         	
+<!-- ===== FOLLOW SOCIAL MEDIA HANDLES ===== -->
+
+<!-- ===== FOOTER ===== -->
+<footer style="text-align:center; padding:20px; background:#000; color:#fff;">
+
+    <!-- Address -->
+    <p>
+        <i class="fas fa-map-marker-alt" style="color: #00C977;"></i>
+        35, Great Avenue, Asore, Atan Ota, Ogun State, Nigeria.
+    </p>
+
+    <!-- Rights & Credits -->
+    <p>
+       © 2025 SERVORAPRISE ECOSYSTEM™<br>
+       All rights reserved.<br>
+       Powered by Servora Enterprise Limited<br>
+       &times;<br>
+       ServoraPrise by Chicent | Diamore Innovation
+    </p>
+
+    <!-- Corporate Governance (standalone) -->
+    <p style="margin-top:15px;">
+        <a href="corporate-governance.html" style="color:#0077FF; text-decoration:underline; font-weight:bold;">
+            Corporate Governance
+        </a>
+    </p>
+
+    <!-- Other Policy Links -->
+    <p style="max-width:900px; margin:10px auto; line-height:1.8;">
+        <a href="Notice/legal-center.html" style="color:#FFFFFF; text-decoration:underline;">
+            Legal Center 
+        </a>
+    </p>
+    <!-- ===== FOLLOW SOCIAL MEDIA HANDLES ===== -->
+             <div class="social-links">
+                  <h2>Follow Us</h2>
+    <a href="https://www.facebook.com/ServoraPrise.Ecosystem" target="_blank" style="text-decoration: none;"><i class="fab fa-facebook" style="color: #1877F2;"></i></a>
+    <a href="https://www.instagram.com/ServoraPrise" target="_blank" style="text-decoration: none;"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+    <a href="https://www.whatsapp.com/channel/0029Vb5nLMk7IUYMwtmDUM22" target="_blank" style="text-decoration: none;"><i class="fab fa-whatsapp" style="color: #00C977;"></i></a>
+    <a href="https://www.threads.net/@ServoraPrise" target="_blank" style="text-decoration: none;"><i class="fab fa-threads" style="color: #FFFFFF;"></i></a>
+    <a href="https://t.me/ServoraPrise" target="_blank" style="text-decoration: none;"><i class="fab fa-telegram" style="color: #0088cc;"></i></a>
+    <p style="margin-top:10px; font-size:14px; color:#FFFFFF;">Call us: +234 813 684 1214</p>
+</div>
+</footer>
+
+<!-- ===== EXTERNAL JS FILE ===== -->
+<script src="scripts.js"></script>
+</body>
+</html>

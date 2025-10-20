@@ -803,6 +803,7 @@ footer {
         bottom: 10px;
         width: 80%;
         
+        
     }
 
     .prev, .next {
@@ -866,7 +867,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .navbar .logo {
         font-size: 1.1rem;
     }
@@ -890,7 +891,7 @@ footer {
     }
 
     .slide img {
-        max-height: 300px;
+        max-height: 250px;
         object-fit: cover;
         
     }
@@ -900,7 +901,7 @@ footer {
     bottom: 20px;
     left: 20px;
     background: rgba(0, 0, 0, 0.6);
-    color: blue;
+    color: #005FCC;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-weight: 600;

@@ -890,10 +890,11 @@ footer {
     }
 
     .slide img {
-        max-height: 250px;
+        max-height: 200px;
         object-fit: cover;
         
     }
+    
 
     .service-card h3 {
         font-size: 1.1rem;

@@ -18,10 +18,41 @@
         <img src="images/Servora_Enterprise_LTD-ServoraPriseByChicent_Logo_Navigationbar.jpg"
              alt="ServoraPrise logo" class="logo-img">
         <span class="brand-name">ServoraPrise Ecosystem</span>
-<section>
-        <li><a href="index.html" class="brand-name">Home</a></li>
-        <li><a href="about-us.html" class="brand-name">About</a></li>
-      </section>  
+      </div>
+
+      <!-- Menu toggle (hamburger). If you prefer 3-dots, see CSS note below. -->
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+
+        <!-- Services dropdown (works on hover desktop and click/tap on mobile) -->
+        <li class="has-dropdown">
+          <!-- Use a button so it is keyboard-accessible -->
+          <button class="services-toggle" aria-haspopup="true" aria-expanded="false">
+            Services <span class="caret">▾</span>
+          </button>
+
+          <ul class="dropdown-content">
+            <li><a href="aluminium-service.html">Custom Aluminium Fabrication</a></li>
+            <li><a href="pos-service.html">POS & Utility Services</a></li>
+            <li><a href="vendor-exchange.html">Vendor Exchange Services</a></li>
+            <li><a href="smart-automation.html">Tech & Smart Automation</a></li>
+            <li><a href="general-merchandise.html">Diverse General Commerce</a></li>
+          </ul>
+        </li>
+
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
     </div>
   </nav>
 </header>

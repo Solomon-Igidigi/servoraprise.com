@@ -259,7 +259,8 @@ body {
 }
    /* NAVBAR - blue background with white text */
 .navbar { 
-  width: 100%; 
+  max-width: 120%; 
+  right: 0px;
   background:#0077FF;   /* brand blue */
   border-bottom:1px solid rgba(255,255,255,0.15); 
   font-family: sans-serif; 
@@ -790,12 +791,12 @@ footer {
     }
 
     .slide img {
-        max-height: 300px;
+        max-height: 250px;
         object-fit: cover;
     }
 
     .caption {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 0.3rem 0.6rem;
         left: 10px;
         bottom: 10px;
@@ -830,6 +831,13 @@ footer {
 
     .feature-text p {
         font-size: 1rem;
+    }
+
+
+    .gallery-grid img{
+    height: 400px;
+    width: 80%;
+    margin: 0 40px;
     }
 
     .contact {

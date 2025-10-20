@@ -890,11 +890,25 @@ footer {
     }
 
     .slide img {
-        max-height: 200px;
+        max-height: 300px;
         object-fit: cover;
         
     }
-    
+
+    .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: blue;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 130px;
+    width: 90%
+}
+
+
 
     .service-card h3 {
         font-size: 1.1rem;

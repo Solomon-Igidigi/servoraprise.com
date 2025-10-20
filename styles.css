@@ -442,7 +442,7 @@ body {
 /* ===== SLIDER ===== */
 .slider {
     position: relative;
-    max-width: 100%;
+    max-width: 90%;
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -458,7 +458,7 @@ body {
 }
 
 .slide img {
-    width: 80%;
+    width: 90%;
     height: 700px;
     border-radius: 8px;
     display: block;
@@ -466,7 +466,7 @@ body {
 }
 
 .slides {
-    height: 800px;
+    height: 700px;
 }
 
 .caption {
@@ -793,13 +793,16 @@ footer {
     .slide img {
         max-height: 250px;
         object-fit: cover;
+        
     }
 
     .caption {
         font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0.3rem 0.3rem;
         left: 10px;
         bottom: 10px;
+        width: 80%;
+        
     }
 
     .prev, .next {
@@ -886,6 +889,12 @@ footer {
         font-size: 0.9rem;
     }
 
+    .slide img {
+        max-height: 250px;
+        object-fit: cover;
+        
+    }
+
     .service-card h3 {
         font-size: 1.1rem;
     }
@@ -905,6 +914,8 @@ footer {
     .contact h2 {
         font-size: 1.6rem;
     }
+
+   
 }
 
 /* ===== COMMISSION AGENCY PAGE STYLING ===== */

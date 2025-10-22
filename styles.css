@@ -442,9 +442,8 @@ body {
 /* ===== SLIDER ===== */
 .slider {
     position: relative;
-    max-width: 90%;
+    max-width: 100%;
     overflow: hidden;
-    margin-bottom: 2rem;
 }
 
 .slide {
@@ -459,14 +458,14 @@ body {
 
 .slide img {
     width: 90%;
-    height: 700px;
+    height: 600px;
     border-radius: 8px;
     display: block;
     justify-self: center;
 }
 
 .slides {
-    height: 700px;
+    height: 600px;
 }
 
 .caption {
@@ -798,11 +797,8 @@ footer {
     .caption {
         font-size: 0.7rem;
         padding: 0.3rem 0.3rem;
-        left: 10px;
         bottom: 10px;
-        width: 100%;
-        
-        
+        width: 60%;
     }
 
     .prev, .next {
@@ -891,8 +887,14 @@ footer {
 
     .slide img {
         max-height: 250px;
-        width: 90%;
         
+    }
+
+    .caption {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.2rem;
+        bottom: 10px;
+        width: 60%;
     }
 
 

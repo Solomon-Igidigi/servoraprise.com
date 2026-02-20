@@ -318,7 +318,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #9900FF; /* brand purple, you can choose #FF3399 for pink */
+    background: #01310d;
     top: 100%;
     left: 0;
     min-width: 160px;
@@ -353,16 +353,10 @@ body {
     font-weight: 700;
 }
 .dropdown-content li a:hover {
-    background-color: #FF3399; /* brand pink */
     color: #fff;
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    .dropdown-content {
-        background: #FF3399; /* pink background for mobile dropdown */
-    }
-}
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -760,7 +754,6 @@ footer {
         border-radius: 0;
         box-shadow: none;
         padding: 0;
-        background: #9900FF;
     }
 
     .dropdown:hover .dropdown-content {
